@@ -98,9 +98,8 @@ class ResultReporter {
         
         try {
             HttpClient httpClient = HttpClientBuilder.create().build();
-            HttpPost request = new HttpPost("http://localhost:8080/primes");
+            HttpPost request = new HttpPost("http://primesapi.herokuapp.com/primes");
             request.setEntity(entity);
-
             HttpResponse response;
             response = httpClient.execute(request);
             System.out.println(response.getStatusLine().getStatusCode());

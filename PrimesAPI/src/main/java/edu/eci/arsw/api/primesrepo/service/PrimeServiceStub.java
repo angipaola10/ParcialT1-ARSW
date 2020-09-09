@@ -31,7 +31,6 @@ public class PrimeServiceStub implements PrimeService
             }
         }
         foundPrimes.add(foundPrime);
-   
     }
 
     @Override
